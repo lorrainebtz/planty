@@ -5,3 +5,71 @@
 body * {
     font-family: 'Syne', sans-serif;
 }
+
+
+/* HEADER */
+
+.site-logo img {
+    width: 60%;
+}
+
+#site-header .header-inner {
+    padding: 0px;
+ }
+ 
+ #site-header .section-inner{
+    margin-right: 0px;
+ }
+ 
+ li.menu-item a {
+    color: #000 !important;
+    display: inline-block;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+ }
+
+
+ li.menu-item:last-child a {
+    color: #FFF !important;
+    display: inline-block;
+    background-color: #DC9F96;
+    padding: 30px 60px;
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+ }
+
+ 
+ 
+ li.menu-item a:hover,
+ li.menu-item.current-menu-item a {
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    font-style: normal;
+    text-decoration: none !important;
+ }
+
+
+
+ li.menu-item:last-child a:hover,
+ li.menu-item.current-menu-item:last-child a {
+    color: #FFF !important;
+    display: inline-block;
+    background-color: #C02E44;
+    padding: 30px 60px;
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none !important;
+}
