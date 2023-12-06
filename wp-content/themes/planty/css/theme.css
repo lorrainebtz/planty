@@ -81,6 +81,7 @@ body * {
     padding: 20px;
     text-align: center;
     border: none;
+    margin-top: 0px!important;
  }
 
  #site-footer a {
