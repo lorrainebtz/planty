@@ -18,6 +18,7 @@ body * {
  }
  
  #site-header .section-inner{
+    width: 97%;
     margin-right: 0px;
  }
  
@@ -73,3 +74,26 @@ body * {
     font-style: normal;
     text-decoration: none !important;
 }
+
+/* FOOTER */
+
+#site-footer {
+    padding: 20px;
+    text-align: center;
+    border: none;
+ }
+
+ #site-footer a {
+    color: black;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+ }
+
+ #site-footer a:hover {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+ }
