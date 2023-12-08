@@ -159,6 +159,7 @@ body * {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
    }
 
    .illu-gout {
@@ -210,6 +211,7 @@ body * {
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 80px;
+    flex-wrap: wrap;
    }
 
    .vos-informations-livraison h2 {
@@ -226,3 +228,36 @@ body * {
     padding-left: 45px;
     border-left: solid 1px white;
    }
+
+
+   /* COMMANDER RESPONSIVE */
+
+   @media (max-width: 768px) {
+    .gouts {
+        justify-content: space-around;
+       }
+
+    .votre-commande h2 {
+        text-align: center;
+       }
+
+       .vos-informations-livraison h2 {
+        text-align: center;
+       }
+
+    .vos-information {
+        width: 100%;
+        padding-right: 0px;
+       }
+    
+       .livraison {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 40px;
+        margin-top: 50px;
+        border-left: solid 0px white;
+        border-top: solid 1px white;
+       }
+    
+    }
+    
