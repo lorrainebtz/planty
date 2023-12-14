@@ -75,6 +75,20 @@ body * {
     text-decoration: none !important;
 }
 
+
+.modal-menu > li > .ancestor-wrapper > a  {
+    color: #000 !important;
+    display: inline-block;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
 /* FOOTER */
 
 #site-footer {

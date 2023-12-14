@@ -9,3 +9,19 @@ function theme_enqueue_styles(){
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 }
 
+
+
+/* HOOK FILTERS */
+
+
+add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+function add_extra_item_to_nav_menu( $items, $args ) {
+    if (is_user_logged_in() && $args->menu === 'Principal') {
+        $items .= '<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://localhost:8888/Planty/wp-admin">Admin</a></li><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://localhost:8888/Planty/commander/">Commander</a></li>';
+    }
+    elseif (!is_user_logged_in() && $args->menu === 'Principal') {
+        $items .= '<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://localhost:8888/Planty/commander/">Commander</a></li>';
+    }
+    return $items;
+}
+

@@ -94,6 +94,7 @@
 
 									wp_nav_menu(
 										array(
+											'menu' => 'Principal',
 											'container'  => '',
 											'items_wrap' => '%3$s',
 											'theme_location' => 'primary',
